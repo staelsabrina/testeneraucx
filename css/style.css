@@ -1,0 +1,862 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+}
+
+/* botões */
+
+.button {
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    transition: .5s;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.buttonicone {
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.buttonicone img {
+    margin-right: 10px;
+}
+
+.language {
+    font-size: 12px;
+    border: 1px solid #626262;
+    padding: 12px 19px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.language img{
+    margin-left: 10px;
+}
+
+.btbranco {
+    background-color: white;
+}
+
+.btletralaranja {
+    color: #FF7F41;
+    background: white;
+    border: 1px solid #eeeeeec5;
+}
+
+.btletralaranja:hover {
+    background: #ffe3d5;
+}
+
+a .btbranco {
+    color: #317CAA;
+}
+
+.btbranco:hover {
+    background: rgb(196, 196, 196);
+}
+
+.btlaranja {
+    background-color: #FF5E0F;
+    color: white;
+}
+
+.btlaranja:hover {
+    background-color: #c24303;
+}
+
+.btamarelo {
+    background-color: #FFBF3F;
+    color: white;
+}
+
+.btamarelo:hover {
+    background-color: #d4a036;
+}
+
+.btverde {
+    display: flex;
+    align-items: center;
+    background: #78BE21;
+    color: white !important;
+    box-shadow: 0px 5px 14px rgba(7, 206, 110, 0.34);
+}
+
+.btverde:hover {
+    background: #5b9119;
+}
+
+.btbrancoborda {
+    background: white;
+    border: 1px solid #78BE21;
+    color: #78BE21 !important;
+}
+
+.btbrancoborda:hover {
+    border: 1px solid #8bdb28;
+    background-color: #ddf0c6;
+    color: white;
+}
+
+.btazul {
+    background: #56CCF2;
+    color: #03257E;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.btazul:hover {
+    background: #1b9cc7;
+}
+
+.btnews {
+    color: #03257E;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Cabeçalho da página */
+
+.topo {
+    background: url('../img/background.png');
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    height: 104px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    width: 60vw;
+    justify-content: space-between;
+}
+
+.menu li {
+    align-self: center;
+}
+
+.menu a {
+    color: white;
+}
+
+/* infos */
+
+.infos {
+    background-color: #3286C3;
+    width: 100vw;
+    height: 50vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding-top: 40px
+}
+
+.historia {
+    display: inline-flex;
+    width: 60vw;
+}
+
+.infos h1 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+    color: #FFFFFF;
+    width: 607px;
+    height: 150px;
+}
+
+.infos .descubra {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    width: 238px;
+    height: 104px;
+}
+
+.infos .botao_conheca{
+    width: 182px;
+    height: 158px;
+    background: #2E7BB2;
+    border-radius: 8px;
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.infos .botao_conheca a {
+    color: #FFFFFF;
+}
+
+.infos .botao_conheca:hover {
+    background: #0e6eb3;
+}
+
+/* Main */
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* primeira área - notícias */
+
+.noticias {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -15vh;
+}
+
+.noticias .item {
+    width: 30vw;
+}
+
+.noticias .item .icon_noticias {
+    width: 80px;
+    margin-top: -30px;
+    margin-left: 10px
+}
+
+.noticias .item  .under {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.noticias .item .under p {
+    margin: 5px 20px 5px 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #6A6A57;
+}
+
+/* segunda área - energia que nutre */
+
+.areas {
+    width: 100vw;
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+}
+
+.energianutre .nutre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.energianutre .nutre .play {
+    position: absolute;
+}
+
+.areas .texto {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    height: 80vh;
+    justify-content: space-evenly;
+}
+
+.areas .texto h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.nutre .texto h2{
+    color: #FF5E0F;
+    margin-bottom: 30px;
+}
+
+/* Carrosséis */
+
+.carrossel {
+    display: flex;
+    margin-left: 40vw;
+    position: absolute;
+}
+
+/* terceira área - alimentos naturais */
+
+.precisa {
+    display: flex;
+    justify-content: center;
+}
+
+.precisa .texto {
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+}
+
+.precisa .maisfibra {
+    margin-left: -100px;
+    height: 100%;
+}
+
+.precisa .texto h2 {
+    color: #FFBF3F;
+    margin-bottom: 30px;
+}
+
+.precisa .texto p {
+    margin-bottom: 40px;
+}
+
+
+/* quarta área - fazer bem mais feliz */
+
+.suavez {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    line-height: 26px;
+}
+
+.suavez .backazul {
+    background-color: #4698CA;
+    height: 90vh;
+    width: 45vw;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.suavez .texto {
+    width: 29vw;
+    margin-left: 40px;
+}
+
+.suavez .texto h2 {
+    color: #FFBF3F;
+    margin-bottom: 10px;
+}
+
+.suavez .texto p {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.suavez .carrossel .carro {
+    align-self: flex-end;
+    margin-left: 10px;
+    background: white;
+}
+
+.suavez .carrossel .carro .textocarro {
+    margin: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suavez .carrossel .carro .textocarro  h3 {
+    color: #4698CA;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.suavez .carrossel .carro .textocarro p {
+    color: #6A6A57;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.suavez .carrossel .carro .textocarro a {
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    padding: 10px 19px;
+    transition: .5s;
+}
+
+.suavez .carrossel .carro .textocarro a:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.suavez .carrossel .botaocarrossel {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    margin-left: 35vw;
+}
+
+.suavez .carrossel .botaocarrossel .continue {
+    position: absolute;
+    align-self: center;
+    background: linear-gradient(270deg, #FAFAF8 6.82%, rgba(255, 255, 255, 0) 100%);
+    padding: 200px 100px 250px 200px;
+}
+
+
+/* quinta área - instagram */
+
+.instagram {
+    margin-top: 50px;
+    width: 100vw;
+    height: 25vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: sans-serif;
+    background: url('../img/elements.png');
+}
+
+.instagram .texto {
+    font-family: sans-serif;
+    margin-left: 140px;
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    height: 60;
+    align-items: flex-start;
+}
+
+.instagram .texto img {
+    margin-bottom: 20px;
+}
+
+.instagram .texto h2 {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #606395;
+}
+
+.instagram .texto p {
+    color: #E31C79;
+    font-weight: bold;
+}
+
+.instagram .carrossel img {
+    margin-left: 10px;
+}
+
+
+/* Sexta área - Logo Ipsum transforma o esporte */
+
+.transformaesporte {
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.transformaesporte header {
+    margin-bottom: 30px;
+}
+
+.transformaesporte header h2 {
+    color: #78BE21;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.transformaesporte header p {
+    font-size: 16px;
+    color: #6A6A57;
+    font-family: 'PT Sans';
+    margin-bottom: 10px;
+}
+
+.transformaesporte header .caixabotoes {
+    margin-top: 10px;
+    display: inline-flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+.transformaesporte .atletas {
+    display: inline-flex;
+}
+
+.transformaesporte .navegadores {
+    position: absolute;
+    display: flex;
+    width: 95vw;
+    margin-top: 56vh;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.transformaesporte .atletas .atleta {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.atleta img {
+    margin-bottom: 20px;
+}
+
+.atletas h3 {
+    color: #78BE21;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.atletas p {
+    font-family: 'PT Sans';
+    color: #6A6A57;
+    font-size: 14px;
+}
+
+
+
+/* sétima área - Seja nosso parceiro */
+
+.sejaparceiro {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.sejaparceiro .texto {
+    width: 35vw;
+}
+
+.sejaparceiro .texto h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    color: #FA4616;
+    margin-bottom: 20px;
+}
+
+.sejaparceiro .texto p {
+    font-family: 'PT Sans';
+    font-size: 16px;
+    color: #6A6A57;
+    line-height: 26px;
+}
+
+.parceiro {
+    margin-top: 40px;
+}
+
+/* Oitava área - footer */
+
+footer img {
+    position: absolute;
+}
+
+/* footer parte 1 */
+
+.topfooter {
+    background: url('../img/montanha.png') no-repeat #03257E;
+    height: 30vh;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topfooter p {
+    width: 360px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    margin-right: 50px;
+}
+
+.topfooter .form {
+    width: 50vw;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter label {
+    color: #E9ECEF;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.sub {
+    height: 30px;
+}
+
+.newsletter input {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #E9ECEF;
+    color: #E9ECEF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+
+.topfooter .form .legenda {
+    margin-bottom: 15px;
+}
+
+/* footer parte 2 */
+
+/* comum a todas as colunas */
+
+.midfooter {
+    height: 100vh;
+    width: 100vw;
+    background: #012765;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.col1, 
+.col2,
+.col3 {
+    width: 28vw;
+    height: 80vh;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.col1 a,
+.col2 .contatos a {
+    color: #56CCF2;
+    text-decoration-line: underline;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+/* coluna 1 */
+
+.col1 .texto {
+    margin-top: 150px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+
+.dadosempresa {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+    color: #8AA6D5;
+}
+
+
+/* coluna 2 */
+
+.col2 .sup {
+    display: flex;
+    flex-direction: column;
+}
+
+.col2 .sup h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+.col2 .areacont {
+    width: 28vw;
+}
+
+.col2 .icons .iconfone{
+    margin-top: 8px;
+}
+
+.col2 .icons .iconmail {
+    margin-top: 70px;
+}
+
+.col2 .contatos p {
+    margin-left: 30px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #56CCF2;
+}
+
+.quadro {
+    margin-top: 20px;
+    border: 1px solid #56CCF2;
+    box-sizing: border-box;
+    padding: 35px
+}
+
+.quadro h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: #F8F9FA;
+    margin-bottom: 20px;
+}
+
+.quadro p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    color: #8AA6D5;
+    margin-bottom: 30px;
+}
+
+
+/* coluna 3 */
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col3 h4 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #F8F9FA;
+    margin-bottom: 15px;
+}
+
+.col3 .acompanhe{
+    height: 15vh;
+}
+
+.col3 .acompanhe .redessociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 7vw;
+}
+
+.col3 .forpagamento{
+    height: 40vh;
+}
+
+.formapag {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formapag .linha1,
+.formapag .linha2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formapag .linha2 {
+    margin-top: 42px;
+}
+
+.sustentabilidade {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsunst {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.slinha {
+    margin-left: 140px;
+}
+
+
+/* footer parte 3 */
+
+.footerbase {
+    height: 12vh;
+    background: #002053;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
